@@ -13,7 +13,7 @@ $ npm install default-arguments
 
 ### usage
 
-```
+```javascript
 function add(a, b) {
     return a + b;
 }
