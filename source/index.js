@@ -9,4 +9,5 @@ function defaultArguments(fn, defaults = {}) {
     };
 }
 
+
 module.exports = defaultArguments;

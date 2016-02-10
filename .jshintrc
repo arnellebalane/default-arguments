@@ -1,0 +1,19 @@
+{
+    "bitwise": true,
+    "camelcase": true,
+    "curly": true,
+    "eqeqeq": true,
+    "esnext": true,
+    "forin": true,
+    "immed": true,
+    "newcap": false,
+    "noempty": true,
+    "quotmark": "single",
+    "maxerr": 1000,
+    "maxlen": 79,
+    "undef": true,
+    "laxbreak": true,
+    "devel": true,
+    "mocha": true,
+    "node": true
+}
