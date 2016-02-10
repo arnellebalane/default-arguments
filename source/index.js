@@ -1,5 +1,6 @@
 function defaultArguments(fn, defaults = {}) {
-    let argnames = fn.toString().replace(/^.*\(|\)(.|\s)*$/g, '').split(/,\s*/g);
+    let argnames = fn.toString().replace(/^.*\(|\)(.|\s)*$/g, '')
+        .split(/,\s*/g);
     defaults = argnames.map(argname => defaults[argname]);
     return function() {
         let args = Array.from(arguments);
@@ -7,6 +8,5 @@ function defaultArguments(fn, defaults = {}) {
         return fn.apply(this, args);
     };
 }
-
 
 module.exports = defaultArguments;
