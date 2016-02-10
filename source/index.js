@@ -1,3 +1,6 @@
+import 'babel-polyfill';
+
+
 function defaultArguments(fn, defaults = {}) {
     let argnames = fn.toString().replace(/^.*\(|\)(.|\s)*$/g, '')
         .split(/,\s*/g);

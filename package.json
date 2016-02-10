@@ -4,7 +4,9 @@
   "description": "give default arguments to function calls",
   "main": "distribution/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "./node_modules/.bin/gulp build",
+    "watch": "./node_modules/.bin/gulp watch",
+    "test": "./node_modules/.bin/mocha distribution/tests"
   },
   "keywords": [
     "default",
@@ -22,7 +24,8 @@
     "gulp": "^3.9.0",
     "gulp-babel": "^6.1.2",
     "gulp-plumber": "^1.0.1",
-    "mocha": "^2.4.5"
+    "mocha": "^2.4.5",
+    "sinon": "^1.17.3"
   },
   "repository": {
     "type": "git",
@@ -31,5 +34,8 @@
   "bugs": {
     "url": "https://github.com/arnellebalane/default-arguments/issues"
   },
-  "homepage": "https://github.com/arnellebalane/default-arguments#readme"
+  "homepage": "https://github.com/arnellebalane/default-arguments#readme",
+  "dependencies": {
+    "babel-polyfill": "^6.5.0"
+  }
 }
