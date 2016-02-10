@@ -1,6 +1,6 @@
 {
   "name": "default-arguments",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "give default arguments to function calls",
   "main": "distribution/index.js",
   "scripts": {
